@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 	has_one_attached :avatar #validation
+	validates :avatar, file_size: { less_than_or_equal_to: 200.kilobytes },
+                     file_content_type: { allow: ['image/jpeg', 'image/png'] }
 	has_secure_password
 
 	has_many :posts
