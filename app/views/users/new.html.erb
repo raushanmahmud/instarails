@@ -1,17 +1,32 @@
 <%= form_for @user do |f|%>
+<<<<<<< HEAD
 	
 	<% if @user.errors %>
 		<ul>
 			<% @user.errors.full_messages.each do |m| %>
 			<li><%= m %></li>
+=======
+
+	<% if @user.errors %>
+		<ul>
+			<% @user.errors.full_messages.each do |m|%>
+				<li><%= m %></li>
+>>>>>>> upstream1/master
 			<% end %>
 		</ul>
 	<% end %>
 
 	<%= f.text_field :username, placeholder: "username" %>
+<<<<<<< HEAD
 	<%= f.text_field :email, placeholder: "email"%>
 	<%= f.password_field :password, placeholder: "password" %>
 	<%= f.file_field :avatar %>
 	<%= f.submit :submit %>
 	
+=======
+	<%= f.text_field :email, placeholder: "email" %>
+	<%= f.password_field :password, placeholder: "password" %>
+	<%= f.file_field :avatar %>
+	<%= f.submit :submit %>
+>>>>>>> upstream1/master
 <% end %>
