@@ -10,13 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2018_06_18_085855) do
-=======
 ActiveRecord::Schema.define(version: 2018_06_18_085851) do
->>>>>>> upstream1/master
-
-  create_table "active_storage_attachments", force: :cascade do |t|
+ create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
     t.integer "record_id", null: false

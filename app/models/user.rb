@@ -1,10 +1,7 @@
 class User < ApplicationRecord
 	has_one_attached :avatar #validation
 	has_secure_password
-<<<<<<< HEAD
-=======
-	has_one_attached :avatar
->>>>>>> upstream1/master
+
 	has_many :posts
 	
 	validates_presence_of :email, :username
